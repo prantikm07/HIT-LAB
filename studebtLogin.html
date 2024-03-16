@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
+    <link rel="stylesheet" href="student.css">
 </head>
 <body>
-
     <div class="main">
+        <div class="head">
+            <span><b>...Student Details...</b></span><br>
+        </div>
         <form name="submit-to-google-sheet">
-        <input type="text" id="StudentName" name="Student Name" placeholder="Enter Name" required>
-        <br>
-        <input type="text" id="StudentRoll" name="Student Roll" placeholder="Enter Roll" required>
-        <br>
-        <button type="submit" onclick="SubmitData()">Login</button>
+            <div class="name">
+                <label for="StudentName">Enter Your Name : </label><br>
+                <input type="text" id="StudentName" name="Student Name" placeholder="Enter Name" required>
+            </div>
+            <br>
+            <div class="roll">
+                <label for="StudentRoll">Enter Your Roll Number : </label><br>
+                <input type="text" id="StudentRoll" name="Student Roll" placeholder="22-IT-133" required>
+            </div>
+            <br>
+            <div class="pcnumber">
+                <label for="PcNumber">Enter Your PC Number : </label><br>
+                <input type="number" id="PcNumber" placeholder="PC" required>
+            </div>
+            <br>
+            <div class="buttom">
+                <div class="buttom1">
+                <label for="login">Login Time : </label>
+                <input type="time" name="Login Time" id="login">
+            </div>
+            <br>
+            <div class="buttom2">
+                <label for="logout">Logout Time : </label>
+                <input type="time" name="Logout Time" id="logout">
+            </div>
+            <button type="submit" id="submitbutton" onclick="SubmitData()">Submit</button>
+            </div>
     </form>
     </div>
     <script>
