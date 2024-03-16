@@ -31,4 +31,9 @@ function SubmitData()
 {
     let msg="Name : "+StudentName.value+"\nRoll : "+StudentRoll.value+"\nPC Number : "+PcNumber.value;
     alert(msg+"\nSuccessfully Logedin");
+    // window.location.reload(true);
+    setTimeout(() => {
+        window.location.reload(true);
+    }, 500);
 }
+
