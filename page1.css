@@ -71,7 +71,14 @@
     border-radius: 98px;
     box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff;
   }
-  
+  .div,.rectangle-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px ;
+    color: white;
+    font-weight: 600;
+  }
   .macbook-air .rectangle-2 {
     position: absolute;
     width: 419px;
