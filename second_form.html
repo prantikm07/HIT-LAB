@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Glassmorphic Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="glassmorphic-form">
+      <h1>Student Details</h1>
+      <form method="POST" name="google-sheet">
+        <input type="text" name="Name" placeholder="Name">
+        <input type="text" name="Roll Number" placeholder="Roll Number">
+        <input type="text" name="PC Number" placeholder="PC Number">
+        <input type="date" name="Date" placeholder="Date">
+		<p>Login Time</p>
+        <input type="time" name="Login Time" placeholder="Time">
+		<p>Logout Time</p>
+		<input type="time" name="Logout Time" placeholder="Time">
+		<input type="text" name="Remarks" placeholder="Remarks">
+        <div class="buttons-container">
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyc_e6ND10tGZKlB0jPr63tlX3I8qzai1ZRFCMVZm9PVvnbgbX1OmB5Vx3lPOhDXo6b/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>
