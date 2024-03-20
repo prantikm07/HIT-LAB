@@ -1,129 +1,98 @@
-.macbook-air {
-    background: linear-gradient(45deg, #ffecd2, #9fdffc, #449bff);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+   *{
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+    height: 100vh;
     width: 100%;
-  }
-  
-  .macbook-air .overlap-group-wrapper {
-    width: 1280px;
-    height: 832px;
-  }
-  
-  .macbook-air .overlap-group {
-    position: relative;
-    width: 1134px;
-    height: 577px;
-    top: 127px;
-    left: 73px;
-  }
-  
-  .macbook-air .rectangle {
-    position: absolute;
-    width: 953px;
-    height: 577px;
-    top: 0;
-    left: 91px;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(25px);
-    border-radius: 35px;
-    box-shadow: 0 0 10px gray;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); */
-  }
-  /* .rectangle:hover{
-    width: 1200px;
-    height: 777px;
-  } */
-  .macbook-air .haldia-institute-of {
-    position: absolute;
-    width: 989px;
-    top: 53px;
-    left: 73px;
-    font-family: "Petrona-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #000000;
-    font-size: 60px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .macbook-air .central-lab {
-    position: absolute;
-    width: 1134px;
-    top: 131px;
-    left: 0;
-    font-family: "Petrona-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #2c2c2c;
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .macbook-air .div {
-    position: absolute;
-    width: 419px;
-    height: 95px;
-    top: 231px;
-    left: 358px;
-    background-color: #0066ff;
-    border-radius: 98px;
-    box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff;
-  }
-  .div,.rectangle-2{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px ;
-    color: white;
-    font-weight: 600;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ffecd2, #9fdffc, #449bff);
   }
-  .div:hover{
-    box-shadow: 2px 5px 7px rgb(79, 79, 255);
+  .main{
+    width: 860px;
+    height: 540px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    border-radius: 35px;
+    box-shadow: 0 0 7px gray;
   }
-  .macbook-air .rectangle-2 {
-    position: absolute;
-    width: 419px;
-    height: 95px;
-    top: 381px;
-    left: 358px;
-    background-color: #c242fe;
-    /* background: transparent;
-    backdrop-filter: blur(15px); */
-    border-radius: 98px;
-    box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff;
-  }
-  .rectangle-2:hover{
-    box-shadow: 2px 5px 7px rgb(128, 47, 162);
-  }
-  .macbook-air .text-wrapper {
-    position: absolute;
-    width: 989px;
-    top: 255px;
-    left: 73px;
-    font-family: "Petrona-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .macbook-air .text-wrapper-2 {
-    position: absolute;
-    width: 989px;
-    top: 405px;
-    left: 73px;
-    font-family: "Petrona-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
+.text{
+  height: 35%;
+  width: 100%;
+}
+.haldia-institute-of{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Petrona-SemiBold", Helvetica;
+  padding-top: 50px;
+}
+.central-lab{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #2c2c2c;
+  font-family: "Petrona-SemiBold", Helvetica;
+}
+.buttn{
+  height: 65%;
+  width: 100%;
+}
+.student{
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.student button{
+  height: 90px;
+  width: 419px;
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #c242fe;
+  font-family: "Petrona-SemiBold", Helvetica;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 98px;
+  box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff;
+}
+.student button:hover{
+  box-shadow: 2px 5px 7px rgb(128, 47, 162);
+}
+.admin{
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin button{
+  height: 90px;
+  width: 419px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #426bfe;
+  font-family: "Petrona-SemiBold", Helvetica;
+  border: none;
+  cursor: pointer;
+  border-radius: 98px;
+  box-shadow: 10px 10px 30px #aeaec066, -10px -10px 30px #ffffff;
+}
+.admin button:hover{
+  box-shadow: 2px 5px 7px rgb(79, 79, 255);
+}
